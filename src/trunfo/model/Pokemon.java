@@ -21,7 +21,7 @@ public class Pokemon {
         this.ataque = ataque;
         this.defesa = defesa;
         this.agilidade = agilidade;
-        this.quantidade = quantidade;
+        this.quantidade += quantidade;
     }
 
     public String getNome() {
@@ -74,13 +74,12 @@ public class Pokemon {
 
     @Override
     public String toString() {
-        for (int i = 1; i <= quantidade; i++){
-        return "Pokemon{" + "nome=" + nome + ", forca=" + forca + ", ataque=" + ataque + ", defesa=" + defesa + ", agilidade=" + agilidade + ", quantidade=" + i + '}';
-    }   return "";
+        
+        return  quantidade + " - " + nome;
+    }  
 }
 
 
     
     
-    
-}
+
